@@ -1,0 +1,19 @@
+html,
+body,
+#viewDiv {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+.esri-elevation-profile.esri-component.esri-widget--panel {
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute !important;
+    bottom: 20;
+    left: 0;
+    right: 0;
+    width: 90% !important;
+    padding-left: 20 !important;
+    padding-right: 20 !important;
+}

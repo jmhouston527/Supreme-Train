@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>ArcGIS API for JavaScript Tutorials: Display a map</title>
+    <script src="https://js.arcgis.com/calcite-components/1.0.0-beta.77/calcite.esm.js" type="module" ></script>
+    <link rel="stylesheet" href="https://js.arcgis.com/calcite-components/1.0.0-beta.77/calcite.css"/>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.22/esri/themes/light/main.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://js.arcgis.com/4.22/"></script>
+    <script src="renderer.js"></script>
+    <script src="map.js"></script>
+
+
+
+</head>
+
+<body class="calcite">
+    <calcite-shell content-behind>
+        <h2 id="header-title" slot="header">
+            NZ Tramping Trails
+        </h2>
+        <calcite-shell-panel slot="primary-panel" detached>
+            <calcite-action-bar slot="action-bar">
+                <calcite-action
+                    data-action-id="profile"
+                    icon="altitude"
+                    text="Profile"
+                ></calcite-action>
+</calcite-action-bar>
+            </calcite-action-bar>
+            <calcite-panel heading="Elevation Profile" height-scale="1" data-panel-id="profile" hidden>
+                <div id="profile"></div>
+            </calcite-panel>
+        </calcite-shell-panel>
+        <div id="viewDiv"></div>
+    </calcite-shell>
+</body>
+
+</html>
